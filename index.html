@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandbox</title>
+    <style>
+      html, body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+      }
+      iframe {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        border: none;
+      }
+      .fallback {
+        display: none;
+        padding: 24px;
+        font-family: Arial, sans-serif;
+        color: white;
+        background: #111;
+        min-height: 100vh;
+        box-sizing: border-box;
+      }
+      .fallback a {
+        color: #7cc6ff;
+      }
+      @media (max-width: 768px) {
+        iframe {
+          height: 70vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <iframe src="https://smallbig.pl/join/6371" title="SmallBig Join"></iframe>
+    <div class="fallback">
+      <p>The page could not be embedded here.</p>
+      <p><a href="https://smallbig.pl/join/6371" target="_blank" rel="noopener noreferrer">Open the page in a new tab</a></p>
+    </div>
+  </body>
+</html>
